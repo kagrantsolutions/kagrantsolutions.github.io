@@ -14,7 +14,7 @@ plugins:
 # Required by github pages
 lsi: false
 safe: true
-source: kagrantsolutions.github.io
+source: /
 highlighter: rouge
 gist:
   noscript: false
