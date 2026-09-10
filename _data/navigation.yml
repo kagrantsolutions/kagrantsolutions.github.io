@@ -1,0 +1,10 @@
+- name: Home
+  link: /
+- name: About Us
+  link: /about-us/
+- name: Our Services
+  link: /our-services/
+- name: Meet The Team
+  link: /meet-the-team/
+- name: Work With Us
+  link: /work-with-us/
