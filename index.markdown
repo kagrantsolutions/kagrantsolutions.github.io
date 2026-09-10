@@ -1,6 +1,8 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: home
+title: "Home"
+permalink: /
 ---
+
+# KA Grant Solutions
+Through a range of grant writing and program development services, our work focuses on supporting marginalized communities by securing funding for the organizations that serve them.
