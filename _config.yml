@@ -10,6 +10,10 @@ github_username:  kagrantsolutions
 # remote_theme: chrisrhymes/bulma-clean-theme@v1.0.0
 theme: bulma-clean-theme
 
+plugins:
+  - bulma-clean-theme
+  - jekyll-seo-tag
+
 # Bulma settings
 fixed_navbar: top
 permalink: pretty
