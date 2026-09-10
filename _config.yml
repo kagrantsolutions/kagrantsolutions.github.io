@@ -9,6 +9,10 @@ github_username:  kagrantsolutions
 # Build settings
 remote_theme: chrisrhymes/bulma-clean-theme@v0.14.0
 
+# Bulma settings
+fixed_navbar: top
+permalink: pretty
+
 # Required by github pages
 lsi: false
 safe: true
