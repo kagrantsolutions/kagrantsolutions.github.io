@@ -2,7 +2,6 @@
 layout: home
 title: "Home"
 permalink: /
-hero_image: /img/IMG_2943.JPG
 ---
 
 # KA Grant Solutions
