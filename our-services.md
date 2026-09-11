@@ -1,5 +1,5 @@
 ---
-layout: home
-title: "Home"
-permalink: /
+layout: page
+title: Our services
+permalink: /our-services/
 ---
