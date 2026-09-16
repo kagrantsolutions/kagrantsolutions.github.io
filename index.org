@@ -6,7 +6,8 @@
 #+HTML_HEAD: <style> #postamble { display: none !important; }</style>
 
 * Home
-** K&A Grant Solutions
+#+ATTR_HTML: :align center
+[[./img/logo.png]]
 Through a range of grant writing and program development services, our work focuses on supporting marginalized communities by securing funding for the organizations that serve them.
 * About Us
 With over 9 years of grant writing experience, K&A Grant Solutions can help your organization streamline its grant writing process and secure reliable funding. We specialize in funding for marginalized communities with an emphasis on healthcare access, immigration legal services, employment programs and youth services.
