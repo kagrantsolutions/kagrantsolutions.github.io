@@ -1,111 +1,111 @@
 #+title: K&A Grant Solutions
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/org/setup/html-theme-bigblow.setup
 #+OPTIONS: num:nil
-#+HTML_HEAD: <style>
-#+HTML_HEAD:   html {
-#+HTML_HEAD:     background-image: url('img/leaf1.png');
-#+HTML_HEAD:     background-attachment: fixed;
-#+HTML_HEAD:     background-size: cover;
-#+HTML_HEAD:     background-position: center;
-#+HTML_HEAD:   }
-#+HTML_HEAD:   html, body, #content, #table-of-contents, .outline-2, .outline-3, .outline-text-2, .outline-text-3 {
-#+HTML_HEAD:     transform: translate3d(0,0,0) !important;
-#+HTML_HEAD:     position: relative !important;
-#+HTML_HEAD:     left: auto !important;
-#+HTML_HEAD:     right: auto !important;
-#+HTML_HEAD:     float: none !important;
-#+HTML_HEAD:     padding-left: 0 !important;
-#+HTML_HEAD:     margin-left: auto !important;
-#+HTML_HEAD:     margin-right: auto !important;
-#+HTML_HEAD:   }
-#+HTML_HEAD:
-#+HTML_HEAD:   body {
-#+HTML_HEAD:     display: flex !important;
-#+HTML_HEAD:     flex-direction: column !important;
-#+HTML_HEAD:     align-items: center !important;
-#+HTML_HEAD:     width: 100% !important;
-#+HTML_HEAD:     margin: 0 !important;
-#+HTML_HEAD:     padding: 0 !important;
-#+HTML_HEAD:   }
-#+HTML_HEAD:
-#+HTML_HEAD:   #content {
-#+HTML_HEAD:     width: 90% !important;
-#+HTML_HEAD:     max-width: 900px !important;
-#+HTML_HEAD:     margin: 40px auto !important;
-#+HTML_HEAD:     padding: 40px 30px !important;
-#+HTML_HEAD:     box-sizing: border-box !important;
-#+HTML_HEAD:   }
-#+HTML_HEAD:
-#+HTML_HEAD:   #content p, #content h1, #content h2, #content h3, #content .outline-text-2 {
-#+HTML_HEAD:     text-align: center !important;
-#+HTML_HEAD:     padding-left: 0 !important;
-#+HTML_HEAD:     margin-left: 0 !important;
-#+HTML_HEAD:     margin-right: 0 !important;
-#+HTML_HEAD:   }
-#+HTML_HEAD:
-#+HTML_HEAD:   #content img {
-#+HTML_HEAD:     display: block !important;
-#+HTML_HEAD:     margin-left: auto !important;
-#+HTML_HEAD:     margin-right: auto !important;
-#+HTML_HEAD:     float: none !important;
-#+HTML_HEAD:     max-width: 100% !important;
-#+HTML_HEAD:     height: auto !important;
-#+HTML_HEAD:   }
-#+HTML_HEAD:
-#+HTML_HEAD:   #table-of-contents {
-#+HTML_HEAD:     width: 100% !important;
-#+HTML_HEAD:     max-width: 700px !important;
-#+HTML_HEAD:     margin: 20px auto 40px auto !important;
-#+HTML_HEAD:     padding: 20px !important;
-#+HTML_HEAD:     box-sizing: border-box !important;
-#+HTML_HEAD:     text-align: center !important;
-#+HTML_HEAD:   }
-#+HTML_HEAD:
-#+HTML_HEAD:   #text-table-of-contents {
-#+HTML_HEAD:     display: inline-block !important;
-#+HTML_HEAD:     text-align: left !important;
-#+HTML_HEAD:     width: auto !important;
-#+HTML_HEAD:     margin: 0 auto !important;
-#+HTML_HEAD:   }
-#+HTML_HEAD:
-#+HTML_HEAD:   #sidebar, .sidebar, #table-of-contents-navigator, #toggle-sidebar {
-#+HTML_HEAD:     display: none !important;
-#+HTML_HEAD:     visibility: hidden !important;
-#+HTML_HEAD:     width: 0 !important;
-#+HTML_HEAD:   }
-#+HTML_HEAD: </style>
-#+HTML_HEAD: <meta name="viewport" content="width=device-width, initial-scale=1.0">
-#+HTML_HEAD: <style>
-#+HTML_HEAD: @media screen and (max-width: 768px) {
-#+HTML_HEAD:   /* 1. Target the precise selector string Bigblow uses for links */
-#+HTML_HEAD:   div#table-of-contents div#text-table-of-contents ul li a,
-#+HTML_HEAD:   #text-table-of-contents ul li a,
-#+HTML_HEAD:   #table-of-contents a {
-#+HTML_HEAD:     font-size: 11px !important;    /* Forces text smaller on narrow screens */
-#+HTML_HEAD:     line-height: 1.2 !important;
-#+HTML_HEAD:     padding: 4px 6px !important;   /* Shrinks the padding footprint */
-#+HTML_HEAD:     white-space: normal !important;
-#+HTML_HEAD:     display: inline-block !important;
-#+HTML_HEAD:   }
-#+HTML_HEAD:
-#+HTML_HEAD:   /* 2. Target the exact path for the ToC Header element */
-#+HTML_HEAD:   div#table-of-contents h2,
-#+HTML_HEAD:   #table-of-contents h2 {
-#+HTML_HEAD:     font-size: 14px !important;    /* Shrinks down the title text */
-#+HTML_HEAD:     margin-top: 5px !important;
-#+HTML_HEAD:     margin-bottom: 5px !important;
-#+HTML_HEAD:   }
-#+HTML_HEAD:
-#+HTML_HEAD:   /* 3. Pull in list indents to prevent clipping */
-#+HTML_HEAD:   #table-of-contents ul {
-#+HTML_HEAD:     padding-left: 10px !important;
-#+HTML_HEAD:     margin-left: 0 !important;
-#+HTML_HEAD:   }
-#+HTML_HEAD: }
-#+HTML_HEAD: </style>
-#+HTML_HEAD: <style> #minitoc { display: none !important; }</style>
-#+HTML_HEAD: <style>div.buttons.dontprint { display: none; }</style>
-#+HTML_HEAD: <style> #postamble { display: none !important; }</style>
+#+HTML_HEAD_EXTRA: <style>
+#+HTML_HEAD_EXTRA:   html {
+#+HTML_HEAD_EXTRA:     background-image: url('img/leaf1.png');
+#+HTML_HEAD_EXTRA:     background-attachment: fixed;
+#+HTML_HEAD_EXTRA:     background-size: cover;
+#+HTML_HEAD_EXTRA:     background-position: center;
+#+HTML_HEAD_EXTRA:   }
+#+HTML_HEAD_EXTRA:   html, body, #content, #table-of-contents, .outline-2, .outline-3, .outline-text-2, .outline-text-3 {
+#+HTML_HEAD_EXTRA:     transform: translate3d(0,0,0) !important;
+#+HTML_HEAD_EXTRA:     position: relative !important;
+#+HTML_HEAD_EXTRA:     left: auto !important;
+#+HTML_HEAD_EXTRA:     right: auto !important;
+#+HTML_HEAD_EXTRA:     float: none !important;
+#+HTML_HEAD_EXTRA:     padding-left: 0 !important;
+#+HTML_HEAD_EXTRA:     margin-left: auto !important;
+#+HTML_HEAD_EXTRA:     margin-right: auto !important;
+#+HTML_HEAD_EXTRA:   }
+#+HTML_HEAD_EXTRA:
+#+HTML_HEAD_EXTRA:   body {
+#+HTML_HEAD_EXTRA:     display: flex !important;
+#+HTML_HEAD_EXTRA:     flex-direction: column !important;
+#+HTML_HEAD_EXTRA:     align-items: center !important;
+#+HTML_HEAD_EXTRA:     width: 100% !important;
+#+HTML_HEAD_EXTRA:     margin: 0 !important;
+#+HTML_HEAD_EXTRA:     padding: 0 !important;
+#+HTML_HEAD_EXTRA:   }
+#+HTML_HEAD_EXTRA:
+#+HTML_HEAD_EXTRA:   #content {
+#+HTML_HEAD_EXTRA:     width: 90% !important;
+#+HTML_HEAD_EXTRA:     max-width: 900px !important;
+#+HTML_HEAD_EXTRA:     margin: 40px auto !important;
+#+HTML_HEAD_EXTRA:     padding: 40px 30px !important;
+#+HTML_HEAD_EXTRA:     box-sizing: border-box !important;
+#+HTML_HEAD_EXTRA:   }
+#+HTML_HEAD_EXTRA:
+#+HTML_HEAD_EXTRA:   #content p, #content h1, #content h2, #content h3, #content .outline-text-2 {
+#+HTML_HEAD_EXTRA:     text-align: center !important;
+#+HTML_HEAD_EXTRA:     padding-left: 0 !important;
+#+HTML_HEAD_EXTRA:     margin-left: 0 !important;
+#+HTML_HEAD_EXTRA:     margin-right: 0 !important;
+#+HTML_HEAD_EXTRA:   }
+#+HTML_HEAD_EXTRA:
+#+HTML_HEAD_EXTRA:   #content img {
+#+HTML_HEAD_EXTRA:     display: block !important;
+#+HTML_HEAD_EXTRA:     margin-left: auto !important;
+#+HTML_HEAD_EXTRA:     margin-right: auto !important;
+#+HTML_HEAD_EXTRA:     float: none !important;
+#+HTML_HEAD_EXTRA:     max-width: 100% !important;
+#+HTML_HEAD_EXTRA:     height: auto !important;
+#+HTML_HEAD_EXTRA:   }
+#+HTML_HEAD_EXTRA:
+#+HTML_HEAD_EXTRA:   #table-of-contents {
+#+HTML_HEAD_EXTRA:     width: 100% !important;
+#+HTML_HEAD_EXTRA:     max-width: 700px !important;
+#+HTML_HEAD_EXTRA:     margin: 20px auto 40px auto !important;
+#+HTML_HEAD_EXTRA:     padding: 20px !important;
+#+HTML_HEAD_EXTRA:     box-sizing: border-box !important;
+#+HTML_HEAD_EXTRA:     text-align: center !important;
+#+HTML_HEAD_EXTRA:   }
+#+HTML_HEAD_EXTRA:
+#+HTML_HEAD_EXTRA:   #text-table-of-contents {
+#+HTML_HEAD_EXTRA:     display: inline-block !important;
+#+HTML_HEAD_EXTRA:     text-align: left !important;
+#+HTML_HEAD_EXTRA:     width: auto !important;
+#+HTML_HEAD_EXTRA:     margin: 0 auto !important;
+#+HTML_HEAD_EXTRA:   }
+#+HTML_HEAD_EXTRA:
+#+HTML_HEAD_EXTRA:   #sidebar, .sidebar, #table-of-contents-navigator, #toggle-sidebar {
+#+HTML_HEAD_EXTRA:     display: none !important;
+#+HTML_HEAD_EXTRA:     visibility: hidden !important;
+#+HTML_HEAD_EXTRA:     width: 0 !important;
+#+HTML_HEAD_EXTRA:   }
+#+HTML_HEAD_EXTRA: </style>
+#+HTML_HEAD_EXTRA: <meta name="viewport" content="width=device-width, initial-scale=1.0">
+#+HTML_HEAD_EXTRA: <style>
+#+HTML_HEAD_EXTRA: @media screen and (max-width: 768px) {
+#+HTML_HEAD_EXTRA:   /* 1. Target the precise selector string Bigblow uses for links */
+#+HTML_HEAD_EXTRA:   div#table-of-contents div#text-table-of-contents ul li a,
+#+HTML_HEAD_EXTRA:   #text-table-of-contents ul li a,
+#+HTML_HEAD_EXTRA:   #table-of-contents a {
+#+HTML_HEAD_EXTRA:     font-size: 11px !important;    /* Forces text smaller on narrow screens */
+#+HTML_HEAD_EXTRA:     line-height: 1.2 !important;
+#+HTML_HEAD_EXTRA:     padding: 4px 6px !important;   /* Shrinks the padding footprint */
+#+HTML_HEAD_EXTRA:     white-space: normal !important;
+#+HTML_HEAD_EXTRA:     display: inline-block !important;
+#+HTML_HEAD_EXTRA:   }
+#+HTML_HEAD_EXTRA:
+#+HTML_HEAD_EXTRA:   /* 2. Target the exact path for the ToC Header element */
+#+HTML_HEAD_EXTRA:   div#table-of-contents h2,
+#+HTML_HEAD_EXTRA:   #table-of-contents h2 {
+#+HTML_HEAD_EXTRA:     font-size: 14px !important;    /* Shrinks down the title text */
+#+HTML_HEAD_EXTRA:     margin-top: 5px !important;
+#+HTML_HEAD_EXTRA:     margin-bottom: 5px !important;
+#+HTML_HEAD_EXTRA:   }
+#+HTML_HEAD_EXTRA:
+#+HTML_HEAD_EXTRA:   /* 3. Pull in list indents to prevent clipping */
+#+HTML_HEAD_EXTRA:   #table-of-contents ul {
+#+HTML_HEAD_EXTRA:     padding-left: 10px !important;
+#+HTML_HEAD_EXTRA:     margin-left: 0 !important;
+#+HTML_HEAD_EXTRA:   }
+#+HTML_HEAD_EXTRA: }
+#+HTML_HEAD_EXTRA: </style>
+#+HTML_HEAD_EXTRA: <style> #minitoc { display: none !important; }</style>
+#+HTML_HEAD_EXTRA: <style>div.buttons.dontprint { display: none; }</style>
+#+HTML_HEAD_EXTRA: <style> #postamble { display: none !important; }</style>
 * Home
 #+ATTR_HTML: :style align: center; width: 50%; height: auto
 [[./img/logo.png]]
