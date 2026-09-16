@@ -1,0 +1,37 @@
+#+title: K&A Grant Solutions
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/setup/html-theme-bigblow.setup
+
+* Home
+** K&A Grant Solutions
+Through a range of grant writing and program development services, our work focuses on supporting marginalized communities by securing funding for the organizations that serve them.
+* About Us
+With over 9 years of grant writing experience, K&A Grant Solutions can help your organization streamline its grant writing process and secure reliable funding. We specialize in funding for marginalized communities with an emphasis on healthcare access, immigration legal services, employment programs and youth services.
+We have secured over 8 million dollars in Private, City and State awards, successfully launching new programs and expanding current ones. We also have experience in outreach, relationship building and sustaining longstanding private funder relationships to support organizations.
+** Our experience:
+- grant writing
+- nonprofit management
+- financial management
+- program design
+- fundraising
+- direct client service
+* Our Services
+| Pre-award services include: | Post-award services include: | Package services include:   |
+|-----------------------------+------------------------------+-----------------------------|
+| Grant writing               | Site plans & projections     | Readiness assessments       |
+| Grant editing               | Monitoring & evaluation      | Program development         |
+| Budget preparation          | Tracking program performance | Grant calendar              |
+| Grant prospecting           | Performance reporting        | Grant prospecting           |
+| Grant research              | Site visit preparation       | Creation of grant templates |
+|                             |                              |                             |
+** We tailor our services to your specific needs. Schedule a consultation for more information about our services and pricing.
+* Meet the Team
+** Ashley Whetham
+Ashley brings over 5 years of program management and grant writing experience. She is experienced on a diverse range of grants concerning immigrants.
+Passionate about uplifting displaced people and making a difference. Based in Chicago.
+
+** Kendra Thomas
+Through data-driven program design, Kendra specializes in grant writing and program development for healthcare access in underserved communities.
+In her free time, Kendra enjoys traveling and spending time outdoors with her dog.
+* Work With Us
+Please [[mailto:kagrantsolutions@gmail.com][email us]] to set up a free consultation.
+KAGrantSolutions@gmail.com
