@@ -1,6 +1,7 @@
 #+title: K&A Grant Solutions
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/org/setup/html-theme-bigblow.setup
-
+#+OPTIONS: num:nil
+#+HTML_HEAD: <style>.#minitoc { display: none; }</style>
 * Home
 ** K&A Grant Solutions
 Through a range of grant writing and program development services, our work focuses on supporting marginalized communities by securing funding for the organizations that serve them.
