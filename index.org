@@ -79,7 +79,7 @@
 #+HTML_HEAD: @media screen and (max-width: 768px) {
 #+HTML_HEAD:   /* 1. Global text scaling down for the entire ToC block */
 #+HTML_HEAD:   #table-of-contents {
-#+HTML_HEAD:     font-size: 13px !important;  /* Drops the font scale down from ~16px/18px */
+#+HTML_HEAD:     font-size: 7px !important;  /* Drops the font scale down from ~16px/18px */
 #+HTML_HEAD:     line-height: 1.3 !important;
 #+HTML_HEAD:   }
 #+HTML_HEAD:
