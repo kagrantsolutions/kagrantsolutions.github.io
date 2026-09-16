@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2026-09-16 Wed 14:54 -->
+<!-- 2026-09-16 Wed 14:56 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>K&amp;A Grant Solutions</title>
@@ -93,56 +93,81 @@ visibility: hidden !important;
 width: 0 !important;
 }
 @media screen and (max-width: 768px) {
-/* 1. Reset layout block positioning */
+/* 1. Fully isolate the ToC from JS structural math */
 #table-of-contents {
-position: relative !important;
+position: static !important;
+display: block !important;
+width: 100% !important;
+max-width: 100% !important;
+height: auto !important;
+max-height: none !important;
+top: 0 !important;
+left: 0 !important;
+margin: 0 0 30px 0 !important;
+padding: 15px !important;
+box-sizing: border-box !important;
+overflow: visible !important;
+clear: both !important;
+}
+
+/* 2. Break list rendering restrictions causing multi-line overlap bugs */
+#text-table-of-contents {
 display: block !important;
 width: 100% !important;
 height: auto !important;
-padding: 15px !important;
-margin: 0 0 20px 0 !important;
-box-sizing: border-box !important;
-}
-
-/* 2. COMPLETELY KILL THE INVISIBLE OVERLAPPING NAV BLOCK */
-#toggle-sidebar,
-.org-nav-box,
-#table-of-contents h2 a {
-display: none !important;
-visibility: hidden !important;
-height: 0 !important;
-width: 0 !important;
-opacity: 0 !important;
-pointer-events: none !important; /* Disables touch capture entirely */
-}
-
-/* 3. Elevate links to make them touchable and fix wrapping line bumps */
-#text-table-of-contents {
 position: relative !important;
-z-index: 9999 !important; /* Pushes links to the absolute top touch layer */
+z-index: 99999 !important;
 }
 
-#text-table-of-contents ul,
+#text-table-of-contents ul {
+display: block !important;
+float: none !important;
+padding-left: 20px !important;
+margin: 5px 0 !important;
+}
+
 #text-table-of-contents li {
-margin-bottom: 8px !important;
-padding-bottom: 2px !important;
-}
-
-#text-table-of-contents a {
-display: inline-block !important; /* Gives the link a proper touch target area */
+display: list-item !important;
+float: none !important;
+width: 100% !important;
+padding: 4px 0 !important;
+margin: 0 !important;
 position: relative !important;
-z-index: 10000 !important;
-word-break: break-word !important; /* Prevents overflow line bumping */
-white-space: normal !important;
-padding: 5px 0 !important; /* Makes it easier to tap with a finger */
 }
 
-/* 4. Restore standard content placement */
+/* 3. Optimize text links for tap accuracy and prevent text node squishing */
+#text-table-of-contents a {
+display: block !important;  /* Block display gives full width tap bounds */
+width: auto !important;
+padding: 8px 12px !important; /* Expands touch target area */
+margin: 0 !important;
+white-space: normal !important; /* Forces clean multi-line wrapping */
+word-break: break-word !important;
+position: relative !important;
+z-index: 999999 !important; /* Keeps links explicitly over hidden targets */
+pointer-events: auto !important; /* Force re-enables broken click registration */
+}
+
+/* 4. Neutralize the overlapping postamble & footer layouts */
+#postamble,
+.footer,
+#toggle-sidebar,
+.org-nav-box {
+position: static !important;
+clear: both !important;
+margin-top: 50px !important;
+z-index: 1 !important;
+}
+
+/* 5. Clean up main body flow to sit below the independent elements */
 #content {
 margin-left: 0 !important;
 width: 100% !important;
+max-width: 100% !important;
 padding: 15px !important;
 box-sizing: border-box !important;
+display: block !important;
+clear: both !important;
 }
 }
 </style>
@@ -157,32 +182,32 @@ box-sizing: border-box !important;
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org54f31fc">Home</a></li>
-<li><a href="#org257d5df">About Us</a>
+<li><a href="#org2644297">Home</a></li>
+<li><a href="#org679e564">About Us</a>
 <ul>
-<li><a href="#org5a2a3f1">Our experience:</a></li>
+<li><a href="#org24b2e31">Our experience:</a></li>
 </ul>
 </li>
-<li><a href="#org5af93a4">Our Services</a>
+<li><a href="#org78453d1">Our Services</a>
 <ul>
-<li><a href="#org67747d1">We tailor our services to your specific needs. Schedule a consultation for more information about our services and pricing.</a></li>
+<li><a href="#org9845b2a">We tailor our services to your specific needs. Schedule a consultation for more information about our services and pricing.</a></li>
 </ul>
 </li>
-<li><a href="#orgfbb8538">Meet the Team</a>
+<li><a href="#org2d03f2a">Meet the Team</a>
 <ul>
-<li><a href="#org7feece0">Ashley Whetham</a></li>
-<li><a href="#org7ee664e">Kendra Thomas</a></li>
+<li><a href="#org4ed8f53">Ashley Whetham</a></li>
+<li><a href="#org94ff89a">Kendra Thomas</a></li>
 </ul>
 </li>
-<li><a href="#orgbdb6fbf">Work With Us</a></li>
+<li><a href="#orge19f026">Work With Us</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org54f31fc" class="outline-2">
-<h2 id="org54f31fc">Home</h2>
-<div class="outline-text-2" id="text-org54f31fc">
+<div id="outline-container-org2644297" class="outline-2">
+<h2 id="org2644297">Home</h2>
+<div class="outline-text-2" id="text-org2644297">
 
-<div id="org2c5c424" class="figure">
+<div id="org3317e22" class="figure">
 <p><img src="./img/logo.png" alt="logo.png" style="align: center; width: 50%; height: auto" />
 </p>
 </div>
@@ -191,17 +216,17 @@ Through a range of grant writing and program development services, our work focu
 </p>
 </div>
 </div>
-<div id="outline-container-org257d5df" class="outline-2">
-<h2 id="org257d5df">About Us</h2>
-<div class="outline-text-2" id="text-org257d5df">
+<div id="outline-container-org679e564" class="outline-2">
+<h2 id="org679e564">About Us</h2>
+<div class="outline-text-2" id="text-org679e564">
 <p style="text-align: left !important;">
 With over 9 years of grant writing experience, K&amp;A Grant Solutions can help your organization streamline its grant writing process and secure reliable funding. We specialize in funding for marginalized communities with an emphasis on healthcare access, immigration legal services, employment programs and youth services.
 We have secured over 8 million dollars in private, city and state awards, successfully launching new programs and expanding current ones. We also have experience in outreach, relationship building and sustaining longstanding private funder relationships to support organizations.
 </p>
 </div>
-<div id="outline-container-org5a2a3f1" class="outline-3">
-<h3 id="org5a2a3f1">Our experience:</h3>
-<div class="outline-text-3" id="text-org5a2a3f1">
+<div id="outline-container-org24b2e31" class="outline-3">
+<h3 id="org24b2e31">Our experience:</h3>
+<div class="outline-text-3" id="text-org24b2e31">
 <ul class="org-ul">
 <li>Grant writing</li>
 <li>Nonprofit management</li>
@@ -213,11 +238,11 @@ We have secured over 8 million dollars in private, city and state awards, succes
 </div>
 </div>
 </div>
-<div id="outline-container-org5af93a4" class="outline-2">
-<h2 id="org5af93a4">Our Services</h2>
-<div class="outline-text-2" id="text-org5af93a4">
+<div id="outline-container-org78453d1" class="outline-2">
+<h2 id="org78453d1">Our Services</h2>
+<div class="outline-text-2" id="text-org78453d1">
 
-<div id="org7af041c" class="figure">
+<div id="orgc48d681" class="figure">
 <p><img src="./img/leaf2.png" alt="leaf2.png" style="align: center; width: 50%; height: auto" />
 </p>
 </div>
@@ -271,31 +296,31 @@ We have secured over 8 million dollars in private, city and state awards, succes
 </tbody>
 </table>
 </div>
-<div id="outline-container-org67747d1" class="outline-3">
-<h3 id="org67747d1">We tailor our services to your specific needs. Schedule a consultation for more information about our services and pricing.</h3>
+<div id="outline-container-org9845b2a" class="outline-3">
+<h3 id="org9845b2a">We tailor our services to your specific needs. Schedule a consultation for more information about our services and pricing.</h3>
 </div>
 </div>
-<div id="outline-container-orgfbb8538" class="outline-2">
-<h2 id="orgfbb8538">Meet the Team</h2>
-<div class="outline-text-2" id="text-orgfbb8538">
+<div id="outline-container-org2d03f2a" class="outline-2">
+<h2 id="org2d03f2a">Meet the Team</h2>
+<div class="outline-text-2" id="text-org2d03f2a">
 
-<div id="org0dc96d7" class="figure">
+<div id="orge362fd6" class="figure">
 <p><img src="./img/leaf3.png" alt="leaf3.png" style="align: center; width: 50%; height: auto" />
 </p>
 </div>
 </div>
-<div id="outline-container-org7feece0" class="outline-3">
-<h3 id="org7feece0">Ashley Whetham</h3>
-<div class="outline-text-3" id="text-org7feece0">
+<div id="outline-container-org4ed8f53" class="outline-3">
+<h3 id="org4ed8f53">Ashley Whetham</h3>
+<div class="outline-text-3" id="text-org4ed8f53">
 <p style="text-align: left !important;">
 Ashley brings over 5 years of program management and grant writing experience. She is experienced on a diverse range of grants concerning immigrants.
 Passionate about uplifting displaced people and making a difference. Based in Chicago.
 </p>
 </div>
 </div>
-<div id="outline-container-org7ee664e" class="outline-3">
-<h3 id="org7ee664e">Kendra Thomas</h3>
-<div class="outline-text-3" id="text-org7ee664e">
+<div id="outline-container-org94ff89a" class="outline-3">
+<h3 id="org94ff89a">Kendra Thomas</h3>
+<div class="outline-text-3" id="text-org94ff89a">
 <p style="text-align: left !important;">
 Through data-driven program design, Kendra specializes in grant writing and program development for healthcare access in underserved communities.
 In her free time, Kendra enjoys traveling and spending time outdoors with her dog.
@@ -303,9 +328,9 @@ In her free time, Kendra enjoys traveling and spending time outdoors with her do
 </div>
 </div>
 </div>
-<div id="outline-container-orgbdb6fbf" class="outline-2">
-<h2 id="orgbdb6fbf">Work With Us</h2>
-<div class="outline-text-2" id="text-orgbdb6fbf">
+<div id="outline-container-orge19f026" class="outline-2">
+<h2 id="orge19f026">Work With Us</h2>
+<div class="outline-text-2" id="text-orge19f026">
 <p>
 Please <a href="mailto:kagrantsolutions@gmail.com">email us</a> or complete this form to set up a free consultation.
 </p>
@@ -320,7 +345,7 @@ Loading…</iframe>
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="date">Created: 2026-09-16 Wed 14:54</p>
+<p class="date">Created: 2026-09-16 Wed 14:56</p>
 </div>
 </body>
 </html>
