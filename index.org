@@ -1,6 +1,7 @@
 #+title: K&A Grant Solutions
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/org/setup/html-theme-bigblow.setup
 #+OPTIONS: num:nil
+#+HTML_HEAD: <meta name="viewport" content="width=device-width, initial-scale=1.0">
 #+HTML_HEAD: <style>
 #+HTML_HEAD:   html {
 #+HTML_HEAD:     background-image: url('img/leaf1.png');
@@ -74,27 +75,49 @@
 #+HTML_HEAD:     width: 0 !important;
 #+HTML_HEAD:   }
 #+HTML_HEAD: @media screen and (max-width: 768px) {
+#+HTML_HEAD:   body {
+#+HTML_HEAD:     padding: 0 !important;
+#+HTML_HEAD:     margin: 0 !important;
+#+HTML_HEAD:     overflow-x: hidden !important;
+#+HTML_HEAD:   }
+#+HTML_HEAD:
 #+HTML_HEAD:   #table-of-contents {
-#+HTML_HEAD:     position: relative !important;
+#+HTML_HEAD:     position: static !important;
+#+HTML_HEAD:     display: block !important;
 #+HTML_HEAD:     width: 100% !important;
+#+HTML_HEAD:     max-width: 100% !important;
 #+HTML_HEAD:     height: auto !important;
-#+HTML_HEAD:     left: 0 !important;
-#+HTML_HEAD:     top: 0 !important;
+#+HTML_HEAD:     float: none !important;
 #+HTML_HEAD:     border-right: none !important;
-#+HTML_HEAD:     border-bottom: 2px solid #e1e1e1;
-#+HTML_HEAD:     padding: 15px !important;
-#+HTML_HEAD:     box-sizing: border-box;
+#+HTML_HEAD:     border-bottom: 2px solid #ddd !important;
+#+HTML_HEAD:     padding: 20px !important;
+#+HTML_HEAD:     box-sizing: border-box !important;
 #+HTML_HEAD:   }
 #+HTML_HEAD:
 #+HTML_HEAD:   #content {
 #+HTML_HEAD:     margin-left: 0 !important;
 #+HTML_HEAD:     width: 100% !important;
+#+HTML_HEAD:     max-width: 100% !important;
 #+HTML_HEAD:     padding: 15px !important;
-#+HTML_HEAD:     box-sizing: border-box;
+#+HTML_HEAD:     box-sizing: border-box !important;
+#+HTML_HEAD:     display: block !important;
+#+HTML_HEAD:   }
+#+HTML_HEAD:
+#+HTML_HEAD:   #text-table-of-contents button,
+#+HTML_HEAD:   #table-of-contents h2 a,
+#+HTML_HEAD:   .org-nav-box {
+#+HTML_HEAD:     display: none !important;
 #+HTML_HEAD:   }
 #+HTML_HEAD:
 #+HTML_HEAD:   #text-table-of-contents ul {
-#+HTML_HEAD:     padding-left: 15px !important;
+#+HTML_HEAD:     padding-left: 20px !important;
+#+HTML_HEAD:     margin-left: 0 !important;
+#+HTML_HEAD:     word-wrap: break-word !important;
+#+HTML_HEAD:     white-space: normal !important;
+#+HTML_HEAD:   }
+#+HTML_HEAD:
+#+HTML_HEAD:   p, li, code, pre {
+#+HTML_HEAD:     word-break: break-word !important;
 #+HTML_HEAD:   }
 #+HTML_HEAD: }
 #+HTML_HEAD: </style>
