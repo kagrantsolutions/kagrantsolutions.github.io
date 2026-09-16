@@ -79,7 +79,7 @@
 #+HTML_HEAD: <style> #postamble { display: none !important; }</style>
 
 * Home
-#+ATTR_HTML: :align center
+#+ATTR_HTML: :style align: center; width: 50%; height: auto
 [[./img/logo.png]]
 #+ATTR_HTML: :style text-align: left !important;
 Through a range of grant writing and program development services, our work focuses on supporting marginalized communities by securing funding for the organizations that serve them.
@@ -95,7 +95,7 @@ We have secured over 8 million dollars in private, city and state awards, succes
 - Fundraising
 - Direct client service
 * Our Services
-#+ATTR_HTML: :align center
+#+ATTR_HTML: :style align: center; width: 50%; height: auto
 [[./img/leaf2.png]]
 | Pre-award services include: | Post-award services include: | Package services include:   |
 |-----------------------------+------------------------------+-----------------------------|
@@ -104,12 +104,11 @@ We have secured over 8 million dollars in private, city and state awards, succes
 | Budget preparation          | Tracking program performance | Grant calendar              |
 | Grant prospecting           | Performance reporting        | Grant prospecting           |
 | Grant research              | Site visit preparation       | Creation of grant templates |
-|                             |                              |                             |
 
 #+ATTR_HTML: :style text-align: left !important;
 ** We tailor our services to your specific needs. Schedule a consultation for more information about our services and pricing.
 * Meet the Team
-#+ATTR_HTML: :align center
+#+ATTR_HTML: :style align: center; width: 50%; height: auto
 [[./img/leaf3.png]]
 #+ATTR_HTML: :style text-align: left !important;
 ** Ashley Whetham
@@ -122,8 +121,6 @@ Passionate about uplifting displaced people and making a difference. Based in Ch
 Through data-driven program design, Kendra specializes in grant writing and program development for healthcare access in underserved communities.
 In her free time, Kendra enjoys traveling and spending time outdoors with her dog.
 * Work With Us
-#+ATTR_HTML: :align center
-[[./img/leaf4.png]]
 Please [[mailto:kagrantsolutions@gmail.com][email us]] or complete this form to set up a free consultation.
 #+BEGIN_EXPORT html
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScpmUGcew19fWDWfSlRCz8wXoMmwI2Ky1IYDxNZbIPiq8Xzcw/viewform?embedded=true%22"
