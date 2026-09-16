@@ -73,6 +73,30 @@
 #+HTML_HEAD:     visibility: hidden !important;
 #+HTML_HEAD:     width: 0 !important;
 #+HTML_HEAD:   }
+#+HTML_HEAD: @media screen and (max-width: 768px) {
+#+HTML_HEAD:   #table-of-contents {
+#+HTML_HEAD:     position: relative !important;
+#+HTML_HEAD:     width: 100% !important;
+#+HTML_HEAD:     height: auto !important;
+#+HTML_HEAD:     left: 0 !important;
+#+HTML_HEAD:     top: 0 !important;
+#+HTML_HEAD:     border-right: none !important;
+#+HTML_HEAD:     border-bottom: 2px solid #e1e1e1;
+#+HTML_HEAD:     padding: 15px !important;
+#+HTML_HEAD:     box-sizing: border-box;
+#+HTML_HEAD:   }
+#+HTML_HEAD:
+#+HTML_HEAD:   #content {
+#+HTML_HEAD:     margin-left: 0 !important;
+#+HTML_HEAD:     width: 100% !important;
+#+HTML_HEAD:     padding: 15px !important;
+#+HTML_HEAD:     box-sizing: border-box;
+#+HTML_HEAD:   }
+#+HTML_HEAD:
+#+HTML_HEAD:   #text-table-of-contents ul {
+#+HTML_HEAD:     padding-left: 15px !important;
+#+HTML_HEAD:   }
+#+HTML_HEAD: }
 #+HTML_HEAD: </style>
 #+HTML_HEAD: <style> #minitoc { display: none !important; }</style>
 #+HTML_HEAD: <style>div.buttons.dontprint { display: none; }</style>
