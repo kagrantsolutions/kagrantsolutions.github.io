@@ -75,49 +75,56 @@
 #+HTML_HEAD:     width: 0 !important;
 #+HTML_HEAD:   }
 #+HTML_HEAD: @media screen and (max-width: 768px) {
-#+HTML_HEAD:   body {
-#+HTML_HEAD:     padding: 0 !important;
-#+HTML_HEAD:     margin: 0 !important;
-#+HTML_HEAD:     overflow-x: hidden !important;
-#+HTML_HEAD:   }
-#+HTML_HEAD:
+#+HTML_HEAD:   /* 1. Reset layout block positioning */
 #+HTML_HEAD:   #table-of-contents {
-#+HTML_HEAD:     position: static !important;
+#+HTML_HEAD:     position: relative !important;
 #+HTML_HEAD:     display: block !important;
 #+HTML_HEAD:     width: 100% !important;
-#+HTML_HEAD:     max-width: 100% !important;
 #+HTML_HEAD:     height: auto !important;
-#+HTML_HEAD:     float: none !important;
-#+HTML_HEAD:     border-right: none !important;
-#+HTML_HEAD:     border-bottom: 2px solid #ddd !important;
-#+HTML_HEAD:     padding: 20px !important;
+#+HTML_HEAD:     padding: 15px !important;
+#+HTML_HEAD:     margin: 0 0 20px 0 !important;
 #+HTML_HEAD:     box-sizing: border-box !important;
 #+HTML_HEAD:   }
 #+HTML_HEAD:
+#+HTML_HEAD:   /* 2. COMPLETELY KILL THE INVISIBLE OVERLAPPING NAV BLOCK */
+#+HTML_HEAD:   #toggle-sidebar,
+#+HTML_HEAD:   .org-nav-box,
+#+HTML_HEAD:   #table-of-contents h2 a {
+#+HTML_HEAD:     display: none !important;
+#+HTML_HEAD:     visibility: hidden !important;
+#+HTML_HEAD:     height: 0 !important;
+#+HTML_HEAD:     width: 0 !important;
+#+HTML_HEAD:     opacity: 0 !important;
+#+HTML_HEAD:     pointer-events: none !important; /* Disables touch capture entirely */
+#+HTML_HEAD:   }
+#+HTML_HEAD:
+#+HTML_HEAD:   /* 3. Elevate links to make them touchable and fix wrapping line bumps */
+#+HTML_HEAD:   #text-table-of-contents {
+#+HTML_HEAD:     position: relative !important;
+#+HTML_HEAD:     z-index: 9999 !important; /* Pushes links to the absolute top touch layer */
+#+HTML_HEAD:   }
+#+HTML_HEAD:
+#+HTML_HEAD:   #text-table-of-contents ul,
+#+HTML_HEAD:   #text-table-of-contents li {
+#+HTML_HEAD:     margin-bottom: 8px !important;
+#+HTML_HEAD:     padding-bottom: 2px !important;
+#+HTML_HEAD:   }
+#+HTML_HEAD:
+#+HTML_HEAD:   #text-table-of-contents a {
+#+HTML_HEAD:     display: inline-block !important; /* Gives the link a proper touch target area */
+#+HTML_HEAD:     position: relative !important;
+#+HTML_HEAD:     z-index: 10000 !important;
+#+HTML_HEAD:     word-break: break-word !important; /* Prevents overflow line bumping */
+#+HTML_HEAD:     white-space: normal !important;
+#+HTML_HEAD:     padding: 5px 0 !important; /* Makes it easier to tap with a finger */
+#+HTML_HEAD:   }
+#+HTML_HEAD:
+#+HTML_HEAD:   /* 4. Restore standard content placement */
 #+HTML_HEAD:   #content {
 #+HTML_HEAD:     margin-left: 0 !important;
 #+HTML_HEAD:     width: 100% !important;
-#+HTML_HEAD:     max-width: 100% !important;
 #+HTML_HEAD:     padding: 15px !important;
 #+HTML_HEAD:     box-sizing: border-box !important;
-#+HTML_HEAD:     display: block !important;
-#+HTML_HEAD:   }
-#+HTML_HEAD:
-#+HTML_HEAD:   #text-table-of-contents button,
-#+HTML_HEAD:   #table-of-contents h2 a,
-#+HTML_HEAD:   .org-nav-box {
-#+HTML_HEAD:     display: none !important;
-#+HTML_HEAD:   }
-#+HTML_HEAD:
-#+HTML_HEAD:   #text-table-of-contents ul {
-#+HTML_HEAD:     padding-left: 20px !important;
-#+HTML_HEAD:     margin-left: 0 !important;
-#+HTML_HEAD:     word-wrap: break-word !important;
-#+HTML_HEAD:     white-space: normal !important;
-#+HTML_HEAD:   }
-#+HTML_HEAD:
-#+HTML_HEAD:   p, li, code, pre {
-#+HTML_HEAD:     word-break: break-word !important;
 #+HTML_HEAD:   }
 #+HTML_HEAD: }
 #+HTML_HEAD: </style>
