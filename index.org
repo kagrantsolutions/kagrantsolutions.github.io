@@ -1,7 +1,6 @@
 #+title: K&A Grant Solutions
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/org/setup/html-theme-bigblow.setup
 #+OPTIONS: num:nil
-#+HTML_HEAD: <meta name="viewport" content="width=device-width, initial-scale=1.0">
 #+HTML_HEAD: <style>
 #+HTML_HEAD:   html {
 #+HTML_HEAD:     background-image: url('img/leaf1.png');
@@ -85,13 +84,13 @@
 #+HTML_HEAD:   }
 #+HTML_HEAD:
 #+HTML_HEAD:   #table-of-contents h2 {
-#+HTML_HEAD:     font-size: 16px !important;  /* Shrinks the main "Table of Contents" title */
+#+HTML_HEAD:     font-size: 6px !important;  /* Shrinks the main "Table of Contents" title */
 #+HTML_HEAD:     margin-bottom: 10px !important;
 #+HTML_HEAD:   }
 #+HTML_HEAD:
 #+HTML_HEAD:   /* 2. Style links as compact, easy-to-tap touch areas */
 #+HTML_HEAD:   #text-table-of-contents a {
-#+HTML_HEAD:     font-size: 13px !important;   /* Tight font to stop unintended line wrapping */
+#+HTML_HEAD:     font-size: 6px !important;   /* Tight font to stop unintended line wrapping */
 #+HTML_HEAD:     display: block !important;    /* Uses the full line width as a safe tap target */
 #+HTML_HEAD:     padding: 6px 10px !important; /* Compact button-style padding for finger tips */
 #+HTML_HEAD:     margin: 2px 0 !important;
@@ -113,7 +112,6 @@
 #+HTML_HEAD:   }
 #+HTML_HEAD: }
 #+HTML_HEAD: </style>
-
 #+HTML_HEAD: <style> #minitoc { display: none !important; }</style>
 #+HTML_HEAD: <style>div.buttons.dontprint { display: none; }</style>
 #+HTML_HEAD: <style> #postamble { display: none !important; }</style>
