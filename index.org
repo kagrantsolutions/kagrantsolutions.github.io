@@ -74,89 +74,49 @@
 #+HTML_HEAD:     visibility: hidden !important;
 #+HTML_HEAD:     width: 0 !important;
 #+HTML_HEAD:   }
+#+HTML_HEAD: </style>
+#+HTML_HEAD: <meta name="viewport" content="width=device-width, initial-scale=1.0">
+#+HTML_HEAD: <style>
 #+HTML_HEAD: @media screen and (max-width: 768px) {
-#+HTML_HEAD:   /* 1. Fully isolate the ToC from JS structural math */
+#+HTML_HEAD:   /* 1. Global text scaling down for the entire ToC block */
 #+HTML_HEAD:   #table-of-contents {
-#+HTML_HEAD:     position: static !important;
-#+HTML_HEAD:     display: block !important;
-#+HTML_HEAD:     width: 100% !important;
-#+HTML_HEAD:     max-width: 100% !important;
-#+HTML_HEAD:     height: auto !important;
-#+HTML_HEAD:     max-height: none !important;
-#+HTML_HEAD:     top: 0 !important;
-#+HTML_HEAD:     left: 0 !important;
-#+HTML_HEAD:     margin: 0 0 30px 0 !important;
-#+HTML_HEAD:     padding: 15px !important;
-#+HTML_HEAD:     box-sizing: border-box !important;
-#+HTML_HEAD:     overflow: visible !important;
-#+HTML_HEAD:     clear: both !important;
+#+HTML_HEAD:     font-size: 13px !important;  /* Drops the font scale down from ~16px/18px */
+#+HTML_HEAD:     line-height: 1.3 !important;
 #+HTML_HEAD:   }
 #+HTML_HEAD:
-#+HTML_HEAD:   /* 2. Break list rendering restrictions causing multi-line overlap bugs */
-#+HTML_HEAD:   #text-table-of-contents {
-#+HTML_HEAD:     display: block !important;
-#+HTML_HEAD:     width: 100% !important;
-#+HTML_HEAD:     height: auto !important;
+#+HTML_HEAD:   #table-of-contents h2 {
+#+HTML_HEAD:     font-size: 16px !important;  /* Shrinks the main "Table of Contents" title */
+#+HTML_HEAD:     margin-bottom: 10px !important;
+#+HTML_HEAD:   }
+#+HTML_HEAD:
+#+HTML_HEAD:   /* 2. Style links as compact, easy-to-tap touch areas */
+#+HTML_HEAD:   #text-table-of-contents a {
+#+HTML_HEAD:     font-size: 13px !important;   /* Tight font to stop unintended line wrapping */
+#+HTML_HEAD:     display: block !important;    /* Uses the full line width as a safe tap target */
+#+HTML_HEAD:     padding: 6px 10px !important; /* Compact button-style padding for finger tips */
+#+HTML_HEAD:     margin: 2px 0 !important;
+#+HTML_HEAD:     white-space: normal !important;
+#+HTML_HEAD:     word-break: break-word !important;
 #+HTML_HEAD:     position: relative !important;
-#+HTML_HEAD:     z-index: 99999 !important;
+#+HTML_HEAD:     z-index: 999999 !important;  /* Stays completely clear of overlapping layers */
 #+HTML_HEAD:   }
 #+HTML_HEAD:
+#+HTML_HEAD:   /* 3. Tighten list indentations to save horizontal room */
 #+HTML_HEAD:   #text-table-of-contents ul {
-#+HTML_HEAD:     display: block !important;
-#+HTML_HEAD:     float: none !important;
-#+HTML_HEAD:     padding-left: 20px !important;
-#+HTML_HEAD:     margin: 5px 0 !important;
+#+HTML_HEAD:     padding-left: 12px !important;
+#+HTML_HEAD:     margin: 0 !important;
 #+HTML_HEAD:   }
 #+HTML_HEAD:
 #+HTML_HEAD:   #text-table-of-contents li {
-#+HTML_HEAD:     display: list-item !important;
-#+HTML_HEAD:     float: none !important;
-#+HTML_HEAD:     width: 100% !important;
-#+HTML_HEAD:     padding: 4px 0 !important;
 #+HTML_HEAD:     margin: 0 !important;
-#+HTML_HEAD:     position: relative !important;
-#+HTML_HEAD:   }
-#+HTML_HEAD:
-#+HTML_HEAD:   /* 3. Optimize text links for tap accuracy and prevent text node squishing */
-#+HTML_HEAD:   #text-table-of-contents a {
-#+HTML_HEAD:     display: block !important;  /* Block display gives full width tap bounds */
-#+HTML_HEAD:     width: auto !important;
-#+HTML_HEAD:     padding: 8px 12px !important; /* Expands touch target area */
-#+HTML_HEAD:     margin: 0 !important;
-#+HTML_HEAD:     white-space: normal !important; /* Forces clean multi-line wrapping */
-#+HTML_HEAD:     word-break: break-word !important;
-#+HTML_HEAD:     position: relative !important;
-#+HTML_HEAD:     z-index: 999999 !important; /* Keeps links explicitly over hidden targets */
-#+HTML_HEAD:     pointer-events: auto !important; /* Force re-enables broken click registration */
-#+HTML_HEAD:   }
-#+HTML_HEAD:
-#+HTML_HEAD:   /* 4. Neutralize the overlapping postamble & footer layouts */
-#+HTML_HEAD:   #postamble,
-#+HTML_HEAD:   .footer,
-#+HTML_HEAD:   #toggle-sidebar,
-#+HTML_HEAD:   .org-nav-box {
-#+HTML_HEAD:     position: static !important;
-#+HTML_HEAD:     clear: both !important;
-#+HTML_HEAD:     margin-top: 50px !important;
-#+HTML_HEAD:     z-index: 1 !important;
-#+HTML_HEAD:   }
-#+HTML_HEAD:
-#+HTML_HEAD:   /* 5. Clean up main body flow to sit below the independent elements */
-#+HTML_HEAD:   #content {
-#+HTML_HEAD:     margin-left: 0 !important;
-#+HTML_HEAD:     width: 100% !important;
-#+HTML_HEAD:     max-width: 100% !important;
-#+HTML_HEAD:     padding: 15px !important;
-#+HTML_HEAD:     box-sizing: border-box !important;
-#+HTML_HEAD:     display: block !important;
-#+HTML_HEAD:     clear: both !important;
+#+HTML_HEAD:     padding: 0 !important;
 #+HTML_HEAD:   }
 #+HTML_HEAD: }
 #+HTML_HEAD: </style>
+
 #+HTML_HEAD: <style> #minitoc { display: none !important; }</style>
 #+HTML_HEAD: <style>div.buttons.dontprint { display: none; }</style>
 #+HTML_HEAD: <style> #postamble { display: none !important; }</style>
-
 * Home
 #+ATTR_HTML: :style align: center; width: 50%; height: auto
 [[./img/logo.png]]
