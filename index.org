@@ -4,7 +4,6 @@
 #+BEGIN_EXPORT html
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
 <style>
-/* 1. Global heavy-handed universal font overwrite for everything inside the ToC container */
 #table-of-contents,
 #table-of-contents *,
 #text-table-of-contents,
@@ -13,6 +12,7 @@
 #text-table-of-contents a {
     font-size: 11px !important;
     line-height: 1.2 !important;
+    white-space: nowrap !important;
 }
    html {
      background-image: url('img/leaf1.png');
@@ -29,6 +29,7 @@
      padding-left: 0 !important;
      margin-left: auto !important;
      margin-right: auto !important;
+     white-space: nowrap !important;
    }
 
    body {
